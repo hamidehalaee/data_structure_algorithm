@@ -1,10 +1,11 @@
 
+
 const colors = require('../console.colorizing')
-
-
 console.time(colors.FgGreen, 'test');
 
 function nestedLoop(n) {
+  //O(n) inside O(n) So, it will be O(n²).
+  //And O(n²) Represents Quadric Time Complexity.
     for (let i = 0; i <= n; i++) {
       for (let j = 0; j <= n; j++) {
         console.log(i, j);

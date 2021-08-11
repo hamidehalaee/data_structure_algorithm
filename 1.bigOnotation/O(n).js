@@ -1,11 +1,15 @@
-// Big O is a way of describing the efficiency of 
-// algorithms without getting too mired in the details. 
-// It describes how the time (or the number of operations needed)
-// it takes to run grows as the size of the input grows.
 const colors = require('../console.colorizing')
 
 console.time(colors.FgGreen, 'test');
 
+//O(n)
+
+// All kind of loops
+//for loop
+// Array.map
+// Array.forEach
+// Array.indexOf
+// ...etc
 let array = [1,2,3,4]
 for(let i = 0 ; i < array.length; i++) console.log(colors.cyan,array[i]) 
 
