@@ -9,4 +9,5 @@ console.time(colors.FgGreen, 'test');
 let array = [1,2,3,4]
 for(let i = 0 ; i < array.length; i++) console.log(colors.cyan,array[i]) 
 
-console.timeEnd(colors.FgGreen, 'test')
+console.timeEnd(colors.FgGreen, 'test') //15.561ms
+
