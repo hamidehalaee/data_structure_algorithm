@@ -1,9 +1,6 @@
-// var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys())
-// console.log(foo)
+//create one million items
 
-for (var a=[],i=0;i<1000000;++i) a[i]=i;
-
-// http://stackoverflow.com/questions/962802#962890
+for (var oneMillinitems=[],i=0;i<1000000;++i) oneMillinitems[i]=i;
 function shuffle(array) {
   var tmp, current, top = array.length;
   if(top) while(--top) {
@@ -15,8 +12,6 @@ function shuffle(array) {
   return array;
 }
 
-a = shuffle(a);
+oneMillinitems = shuffle(oneMillinitems);
 
-// console.log(a)
-
-module.exports = a;
+module.exports = oneMillinitems;
