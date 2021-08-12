@@ -1,6 +1,8 @@
 
 const colors = require('../../console.colorizing')
 
+
+
 console.time(colors.FgGreen, 'test');
 
 function quick_Sort(origArray) {
@@ -32,5 +34,8 @@ const a = require('./create')//2.901s
 quick_Sort(a);
 // console.log("Sorted array: " + sortedArray);
 
-
+const used = process.memoryUsage();
+for (let key in used) {
+  console.log(`${key} ${Math.round(used[key] / 1024 / 1024 * 100) / 100} MB`);
+}
 console.timeEnd(colors.FgGreen, 'test') 
