@@ -4,6 +4,7 @@
 // 3.Objects
 
 const colors = require('../console.colorizing')
+
 console.time(colors.FgGreen, 'test');
 function makeDouble(arr) {
     let myArr = [];
@@ -14,6 +15,8 @@ function makeDouble(arr) {
   
     return myArr;
   }
+let myArr = [1,2,3,4]
+makeDouble(myArr) //heap out of memory
 
 console.timeEnd(colors.FgGreen, 'test')
 
