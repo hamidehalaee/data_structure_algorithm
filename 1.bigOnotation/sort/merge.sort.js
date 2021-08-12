@@ -1,5 +1,6 @@
 
-const colors = require('../../console.colorizing')
+const colors = require('../../console.colorizing');
+
 
 console.time(colors.FgGreen, 'test');
 function merge(left, right){
@@ -28,10 +29,14 @@ function merge(left, right){
     return merge(merge_sort_algorithm(left), merge_sort_algorithm(array));
  }
  
- let myArr = [1,3,2,5,9,8,5,2] //22.942ms
- var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys()) //break
-//   console.log(merge_sort_algorithm(foo));
-const a = require('./create') //1163 S
-merge_sort_algorithm(a)
+let myArr = [1,3,2,5,9,8,5,2] //22.942ms
+var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys()) //break
+const oneMillinitems = require('./create') //1163 S
+merge_sort_algorithm(oneMillinitems)
 
-  console.timeEnd(colors.FgGreen, 'test')//22.942ms
+console.timeEnd(colors.FgGreen, 'test')//22.942ms
+
+const used = process.memoryUsage();
+for (let key in used) {
+  console.log(`${key} ${Math.round(used[key] / 1024 / 1024 * 100) / 100} MB`);
+}
