@@ -26,10 +26,11 @@ function quick_Sort(origArray) {
 	}
 }
 
-var myArray = [1,3,2,5,9,8,5,2]
+var myArray = [1,3,2,5,9,8,5,2]//14.29ms
 var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys())//<--- Last few GCs --->
-quick_Sort(foo);
+const a = require('./create')//2.901s
+quick_Sort(a);
 // console.log("Sorted array: " + sortedArray);
 
 
-console.timeEnd(colors.FgGreen, 'test') //14.29ms
+console.timeEnd(colors.FgGreen, 'test') 

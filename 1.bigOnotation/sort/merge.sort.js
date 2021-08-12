@@ -29,9 +29,9 @@ function merge(left, right){
  }
  
  let myArr = [1,3,2,5,9,8,5,2] //22.942ms
-//  var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys())
+ var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys()) //break
 //   console.log(merge_sort_algorithm(foo));
-const foo = require('./create')
-merge_sort_algorithm(foo)
+const a = require('./create') //1163 S
+merge_sort_algorithm(a)
 
   console.timeEnd(colors.FgGreen, 'test')//22.942ms

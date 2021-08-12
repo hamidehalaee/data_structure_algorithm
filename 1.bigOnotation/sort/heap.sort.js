@@ -48,9 +48,11 @@ function heapSort(input) {
     }
 }
 
-let myArr = [1,3,2,5,9,8,5,2]
+let myArr = [1,3,2,5,9,8,5,2]//20.7ms
 var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys())//4.343s
-heapSort(foo);
+const a = require('./create')//1.022s
+heapSort(a);
+
 // console.log(myArr);
 
-console.timeEnd(colors.FgGreen, 'test')//20.7ms
+console.timeEnd(colors.FgGreen, 'test')
