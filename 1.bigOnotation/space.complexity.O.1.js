@@ -15,7 +15,9 @@ function arrSum(arr) {
   
     return sum;
   }
-  console.timeEnd(colors.FgGreen, 'test')
+  let myArr = [1,2,3,4]
+  arrSum(myArr)
+  console.timeEnd(colors.FgGreen, 'test') //0.28ms
 
   // Spaces taken are:
   //   1 number => let sum = 0.
