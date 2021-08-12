@@ -1,4 +1,4 @@
-quick sort algorithm 
+quick sort algorithm and how it works:
 
 ![220px-Sorting_quicksort_anim](https://user-images.githubusercontent.com/64610931/129254035-b3b86d98-fdee-40d0-928e-e5c417e825e9.gif)
 
