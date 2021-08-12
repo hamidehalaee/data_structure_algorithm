@@ -50,9 +50,13 @@ function heapSort(input) {
 
 let myArr = [1,3,2,5,9,8,5,2]//20.7ms
 var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys())//4.343s
-const a = require('./create')//1.022s
-heapSort(a);
+const oneMillionItems = require('./create')//1.022s
 
-// console.log(myArr);
+heapSort(oneMillionItems);
 
 console.timeEnd(colors.FgGreen, 'test')
+
+const used = process.memoryUsage();
+for (let key in used) {
+  console.log(`${key} ${Math.round(used[key] / 1024 / 1024 * 100) / 100} MB`);
+}
