@@ -28,7 +28,10 @@ function merge(left, right){
     return merge(merge_sort_algorithm(left), merge_sort_algorithm(array));
  }
  
- let myArr = [1,3,2,5,9,8,5,2]
-  console.log(merge_sort_algorithm(myArr));
+ let myArr = [1,3,2,5,9,8,5,2] //22.942ms
+//  var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys())
+//   console.log(merge_sort_algorithm(foo));
+const foo = require('./create')
+merge_sort_algorithm(foo)
 
   console.timeEnd(colors.FgGreen, 'test')//22.942ms

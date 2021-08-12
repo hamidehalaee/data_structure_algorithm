@@ -27,8 +27,9 @@ function quick_Sort(origArray) {
 }
 
 var myArray = [1,3,2,5,9,8,5,2]
-var sortedArray = quick_Sort(myArray);
-console.log("Sorted array: " + sortedArray);
+var foo = Array.from(Array(Math.floor(Math.random() * 10000000)).keys())//<--- Last few GCs --->
+quick_Sort(foo);
+// console.log("Sorted array: " + sortedArray);
 
 
 console.timeEnd(colors.FgGreen, 'test') //14.29ms
