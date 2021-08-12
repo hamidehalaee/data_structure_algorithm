@@ -33,8 +33,10 @@ const used = process.memoryUsage();
 for (let key in used) {
   console.log(`${key} ${Math.round(used[key] / 1024 / 1024 * 100) / 100} MB`);
 }
-// rss 125.59 MB
-// heapTotal 107.2 MB
-// heapUsed 74.48 MB
-// external 1.02 MB
-// arrayBuffers 0.01 MB
+//onemillionItems => {
+	// rss 125.59 MB
+	// heapTotal 107.2 MB
+	// heapUsed 74.48 MB
+	// external 1.02 MB
+	// arrayBuffers 0.01 MB
+// }
