@@ -18,6 +18,7 @@ function quick_Sort(origArray) {
 				right.push(origArray[i]);
 			}
 		}
+		//array.concat = merge arrays
 		return newArray.concat(quick_Sort(left), pivot, quick_Sort(right));
 	}
 }
