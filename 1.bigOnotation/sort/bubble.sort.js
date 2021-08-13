@@ -18,7 +18,7 @@ function sortItems(array) {
 }
 
 var myArray = [1,3,2,5,9,8,5,2],//156.418ms
-oneMillionItems = require('./create');//2.901s
+oneMillionItems = require('./create');//a very long time
 var sortedList = sortItems(oneMillionItems);
 console.log(sortedList);
 console.timeEnd(colors.FgGreen, 'test') 
